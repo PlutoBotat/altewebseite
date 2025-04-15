@@ -20,6 +20,7 @@ export default {
     },
     extend: {
       colors: {
+        border: "hsl(var(--border) / <alpha-value>)",
         pluto: {
           purple: '#6D5AE6',
           dark: '#0B0E14',
