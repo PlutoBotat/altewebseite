@@ -19,6 +19,11 @@ export default {
 		},
 		extend: {
 			colors: {
+        pluto: {
+          purple: '#9b87f5',
+          dark: '#1A1F2C',
+          light: '#D6BCFA',
+        },
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
