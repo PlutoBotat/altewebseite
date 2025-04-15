@@ -21,6 +21,8 @@ export default {
     extend: {
       colors: {
         border: "hsl(var(--border) / <alpha-value>)",
+        background: "hsl(var(--background) / <alpha-value>)",
+        foreground: "hsl(var(--foreground) / <alpha-value>)",
         pluto: {
           purple: '#6D5AE6',
           dark: '#0B0E14',
@@ -49,3 +51,4 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
