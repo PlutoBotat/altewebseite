@@ -19,7 +19,7 @@ const Index = () => {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h1 className="text-7xl md:text-8xl font-bold mb-8">
+          <h1 className="text-7xl md:text-8xl font-bold mb-8 text-gradient">
             Mache deinen<br />Server smarter!
           </h1>
           <p className="text-xl md:text-2xl mb-12 text-gray-400 max-w-3xl mx-auto">
@@ -28,24 +28,24 @@ const Index = () => {
           <div className="flex items-center justify-center gap-6">
             <Button 
               size="lg" 
-              className="bg-[#6D5AE6] hover:bg-[#5845D1] text-white font-semibold px-8 py-7 text-lg rounded-full"
+              className="bg-pluto-purple hover:bg-pluto-purple/90 text-white font-semibold px-8 py-7 text-lg rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-pluto-purple/50"
             >
               Hol dir den Bot jetzt
             </Button>
             <Button 
               variant="ghost" 
               size="lg"
-              className="text-white font-semibold text-lg"
+              className="text-white font-semibold text-lg hover:bg-white/10 rounded-full flex items-center transition-all duration-300 ease-in-out transform hover:scale-105"
             >
-              Entdecke die Funktionen <ArrowRight className="ml-2 h-6 w-6" />
+              Entdecke die Funktionen <ArrowRight className="ml-2 h-6 w-6 text-pluto-light" />
             </Button>
           </div>
         </motion.div>
         
         {/* Background Effects */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full filter blur-3xl"></div>
-          <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full filter blur-3xl"></div>
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-pluto-purple/20 rounded-full filter blur-3xl"></div>
+          <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-pluto-light/20 rounded-full filter blur-3xl"></div>
         </div>
       </section>
     </div>
