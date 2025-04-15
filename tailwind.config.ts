@@ -30,23 +30,20 @@ export default {
           light: '#D6BCFA',
         },
       },
-      textColor: {
-        gradient: {
-          DEFAULT: 'bg-gradient-to-br from-white via-white/90 to-white/70 bg-clip-text text-transparent',
-        }
-      },
-      keyframes: {
-        shimmer: {
-          '0%': { backgroundPosition: '-1000px 0' },
-          '100%': { backgroundPosition: '1000px 0' },
-        },
-      },
-      animation: {
-        shimmer: 'shimmer 2s infinite linear',
-      },
       boxShadow: {
         'glow': '0 0 15px rgba(109, 90, 230, 0.5)',
       },
+      animation: {
+        ...require("tailwindcss-animate").theme.extend.animation,
+        'button-hover': 'pulse 1s infinite',
+      },
+      keyframes: {
+        ...require("tailwindcss-animate").theme.extend.keyframes,
+        pulse: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+        }
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
