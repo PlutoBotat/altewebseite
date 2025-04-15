@@ -20,7 +20,7 @@ export default {
     extend: {
       colors: {
         pluto: {
-          purple: '#9b87f5',
+          purple: '#6D5AE6',
           dark: '#0B0E14',
           darker: '#151823',
           light: '#D6BCFA',
