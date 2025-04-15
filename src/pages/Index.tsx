@@ -10,44 +10,48 @@ const statsVariants = {
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pluto-dark to-black text-white">
+    <div className="min-h-screen bg-[#0B0E14] text-white overflow-x-hidden">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 flex flex-col items-center text-center">
+      <section className="container mx-auto px-4 py-32 flex flex-col items-center text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
+          className="max-w-3xl"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-pluto-purple to-pluto-light bg-clip-text text-transparent">
+          <h1 className="text-6xl md:text-8xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-purple-200 bg-clip-text text-transparent">
             PlutoBot
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl">
+          <p className="text-xl md:text-2xl mb-12 text-gray-300">
             Der ultimative Discord Bot für deine Community.
-            Moderiere, verwalte und verbessere deinen Server mit PlutoBot.
+            Ein moderner Bot mit vielen Funktionen.
           </p>
-          <Button size="lg" className="bg-pluto-purple hover:bg-pluto-light text-white font-semibold px-8 py-6 text-lg rounded-full">
-            Bot hinzufügen <ArrowRight className="ml-2" />
+          <Button 
+            size="lg" 
+            className="bg-purple-500 hover:bg-purple-600 text-white font-semibold px-8 py-7 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
+          >
+            Bot hinzufügen <ArrowRight className="ml-2 h-6 w-6" />
           </Button>
         </motion.div>
       </section>
 
       {/* Features Section */}
-      <section className="container mx-auto px-4 py-20">
-        <h2 className="text-4xl font-bold text-center mb-16">Funktionen</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section className="container mx-auto px-4 py-32">
+        <h2 className="text-4xl font-bold text-center mb-20">Funktionen</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {[
             {
-              icon: <Shield className="w-8 h-8 text-pluto-purple" />,
+              icon: <Shield className="w-10 h-10 text-purple-400" />,
               title: "Moderation",
               description: "Halte deinen Server sicher mit fortschrittlichen Moderationstools",
             },
             {
-              icon: <Bot className="w-8 h-8 text-pluto-purple" />,
+              icon: <Bot className="w-10 h-10 text-purple-400" />,
               title: "Automatisierung",
               description: "Automatisiere Aufgaben und spare wertvolle Zeit",
             },
             {
-              icon: <Command className="w-8 h-8 text-pluto-purple" />,
+              icon: <Command className="w-10 h-10 text-purple-400" />,
               title: "Befehle",
               description: "Intuitive und anpassbare Befehle für alle Bedürfnisse",
             },
@@ -57,23 +61,23 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
-              className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 p-6 rounded-xl backdrop-blur-sm"
+              className="bg-[#151823] p-8 rounded-2xl border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300"
             >
-              <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-gray-400">{feature.description}</p>
+              <div className="mb-6">{feature.icon}</div>
+              <h3 className="text-2xl font-semibold mb-4">{feature.title}</h3>
+              <p className="text-gray-400 text-lg">{feature.description}</p>
             </motion.div>
           ))}
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="container mx-auto px-4 py-20 bg-gradient-to-r from-pluto-dark/50 to-black/50">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <section className="container mx-auto px-4 py-32">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {[
-            { icon: <Users />, value: "100K+", label: "Nutzer" },
-            { icon: <Zap />, value: "500+", label: "Server" },
-            { icon: <Command />, value: "50+", label: "Befehle" },
+            { icon: <Users className="w-8 h-8" />, value: "100K+", label: "Nutzer" },
+            { icon: <Zap className="w-8 h-8" />, value: "500+", label: "Server" },
+            { icon: <Command className="w-8 h-8" />, value: "50+", label: "Befehle" },
           ].map((stat, index) => (
             <motion.div
               key={index}
@@ -81,31 +85,37 @@ const Index = () => {
               initial="hidden"
               whileInView="visible"
               transition={{ delay: index * 0.2 }}
-              className="p-6"
+              className="text-center"
             >
-              <div className="flex justify-center mb-4 text-pluto-purple">
+              <div className="flex justify-center mb-6 text-purple-400">
                 {stat.icon}
               </div>
-              <div className="text-4xl font-bold mb-2">{stat.value}</div>
-              <div className="text-gray-400">{stat.label}</div>
+              <div className="text-5xl font-bold mb-3 bg-gradient-to-r from-purple-400 to-purple-200 bg-clip-text text-transparent">
+                {stat.value}
+              </div>
+              <div className="text-gray-400 text-lg">{stat.label}</div>
             </motion.div>
           ))}
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="container mx-auto px-4 py-20 text-center">
+      <section className="container mx-auto px-4 py-32 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
+          className="max-w-3xl mx-auto"
         >
-          <h2 className="text-4xl font-bold mb-6">Bereit für PlutoBot?</h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-5xl font-bold mb-8">Bereit für PlutoBot?</h2>
+          <p className="text-xl text-gray-300 mb-12">
             Verbessere deinen Discord Server noch heute mit PlutoBot
           </p>
-          <Button size="lg" className="bg-pluto-purple hover:bg-pluto-light text-white font-semibold px-8 py-6 text-lg rounded-full">
-            PlutoBot einladen <ArrowRight className="ml-2" />
+          <Button 
+            size="lg" 
+            className="bg-purple-500 hover:bg-purple-600 text-white font-semibold px-8 py-7 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
+          >
+            PlutoBot einladen <ArrowRight className="ml-2 h-6 w-6" />
           </Button>
         </motion.div>
       </section>
