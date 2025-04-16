@@ -31,6 +31,15 @@ export const MainNav = () => {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
+              <Link to="/dashboard">
+                <NavigationMenuLink 
+                  className={`${navigationMenuTriggerStyle()} text-white hover:bg-pluto-purple/10 transition-colors`}
+                >
+                  Dashboard
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
               <NavigationMenuLink 
                 className={`${navigationMenuTriggerStyle()} text-white hover:bg-pluto-purple/10 transition-colors flex items-center`}
               >
