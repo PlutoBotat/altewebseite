@@ -35,10 +35,10 @@ const Index = () => {
               Hol dir den Bot jetzt
             </Button>
             <Button 
-              variant="ghost" 
+              variant="outline" 
               size="xl"
               rounded="full"
-              className="font-semibold hover:bg-white/10 flex items-center transition-all duration-300 ease-in-out transform hover:scale-105 w-full sm:w-auto"
+              className="font-semibold hover:bg-white/10 flex items-center transition-all duration-300 ease-in-out transform hover:scale-105 w-full sm:w-auto border-white/20"
             >
               Entdecke die Funktionen <ArrowRight className="ml-2 h-6 w-6 text-pluto-light" />
             </Button>

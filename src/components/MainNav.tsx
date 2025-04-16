@@ -15,7 +15,7 @@ export const MainNav = () => {
     <header className="w-full bg-[#0B0E14]/95 backdrop-blur-md sticky top-0 z-50 border-b border-white/10">
       <nav className="container mx-auto flex items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-2">
-          <Globe className="w-8 h-8 text-purple-400" />
+          <Globe className="w-8 h-8 text-pluto-purple" />
           <span className="text-2xl font-bold text-white">PlutoBot</span>
         </Link>
         
@@ -67,7 +67,7 @@ export const MainNav = () => {
           <Button 
             variant="ghost" 
             rounded="full"
-            className="bg-transparent hover:bg-white/10 text-white flex items-center transition-all duration-300 ease-in-out transform hover:scale-105"
+            className="bg-transparent border border-white/20 hover:bg-white/10 text-white flex items-center transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             DE <ChevronDown className="ml-1 h-4 w-4 text-pluto-light" />
           </Button>
