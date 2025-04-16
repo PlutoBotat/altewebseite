@@ -19,23 +19,26 @@ const Index = () => {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h1 className="text-7xl md:text-8xl font-bold mb-8 text-gradient">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold mb-8 text-gradient">
             Mache deinen<br />Server smarter!
           </h1>
           <p className="text-xl md:text-2xl mb-12 text-gray-400 max-w-3xl mx-auto">
             PlutoBot ist eine App für Discord, die dir hilft, deinen Discord-Server und deine Community zu optimieren, indem sie tolle Funktionen für die Organisation des Nutzer-Supports, dein Server-Team und vieles mehr bietet.
           </p>
-          <div className="flex items-center justify-center gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <Button 
-              size="lg" 
-              className="bg-pluto-purple hover:bg-pluto-purple/90 text-white font-semibold px-8 py-7 text-lg rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-pluto-purple/50"
+              size="xl" 
+              variant="purple"
+              rounded="full"
+              className="font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-pluto-purple/50 w-full sm:w-auto"
             >
               Hol dir den Bot jetzt
             </Button>
             <Button 
               variant="ghost" 
-              size="lg"
-              className="text-white font-semibold text-lg hover:bg-white/10 rounded-full flex items-center transition-all duration-300 ease-in-out transform hover:scale-105"
+              size="xl"
+              rounded="full"
+              className="font-semibold hover:bg-white/10 flex items-center transition-all duration-300 ease-in-out transform hover:scale-105 w-full sm:w-auto"
             >
               Entdecke die Funktionen <ArrowRight className="ml-2 h-6 w-6 text-pluto-light" />
             </Button>
