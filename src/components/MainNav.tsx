@@ -55,14 +55,14 @@ export const MainNav = () => {
           <Button 
             variant="purple"
             rounded="full"
-            className="transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-pluto-purple/50"
+            className="transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-pluto-purple/50 text-white"
           >
             Dashboard
           </Button>
           <Button 
             variant="ghost" 
             rounded="full"
-            className="flex items-center transition-all duration-300 ease-in-out transform hover:scale-105"
+            className="text-white hover:bg-white/10 flex items-center transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             DE <ChevronDown className="ml-1 h-4 w-4 text-pluto-light" />
           </Button>
