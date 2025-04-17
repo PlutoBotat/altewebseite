@@ -59,6 +59,14 @@ export default {
           darker: '#151823',
           light: '#D6BCFA',
         },
+        galaxy: {
+          blue: '#5865F2',
+          indigo: '#6366F1',
+          purple: '#A855F7',
+          amber: '#F59E0B',
+          dark: '#0B0E14',
+          darker: '#080A10',
+        },
       },
       textColor: {
         gradient: {
@@ -76,6 +84,7 @@ export default {
       },
       boxShadow: {
         'glow': '0 0 15px rgba(109, 90, 230, 0.5)',
+        'galaxy-glow': '0 0 15px rgba(88, 101, 242, 0.5)',
       },
     },
   },
