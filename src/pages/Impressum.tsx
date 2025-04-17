@@ -20,17 +20,17 @@ const Impressum = () => {
             <section className="bg-[#151823] p-6 rounded-xl border border-white/10">
               <h2 className="text-2xl font-semibold mb-4 text-pluto-light">Angaben gemäß § 5 TMG</h2>
               <div className="space-y-2 text-gray-300">
-                <p>PlutoBot GmbH</p>
-                <p>Musterstraße 123</p>
-                <p>12345 Musterstadt</p>
-                <p>Deutschland</p>
+                <p>PlutoBot </p>
+                <p>Rainbach Im Innkreis 64</p>
+                <p>4791 Rainbach Im Innkreis</p>
+                <p>Österreich</p>
               </div>
             </section>
 
             <section className="bg-[#151823] p-6 rounded-xl border border-white/10">
               <h2 className="text-2xl font-semibold mb-4 text-pluto-light">Kontakt</h2>
               <div className="space-y-2 text-gray-300">
-                <p>Telefon: +49 (0) 123 456789</p>
+                <p>Telefon: +43 (0) 677 63958772</p>
                 <p>E-Mail: info@plutobot.de</p>
               </div>
             </section>
@@ -38,8 +38,8 @@ const Impressum = () => {
             <section className="bg-[#151823] p-6 rounded-xl border border-white/10">
               <h2 className="text-2xl font-semibold mb-4 text-pluto-light">Handelsregister</h2>
               <div className="space-y-2 text-gray-300">
-                <p>Registergericht: Amtsgericht Musterstadt</p>
-                <p>Registernummer: HRB 12345</p>
+                <p>Registergericht: nicht brauchen</p>
+                <p>Registernummer: nix haben wir brauchen wir nicht</p>
               </div>
             </section>
           </div>
