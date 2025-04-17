@@ -24,7 +24,7 @@ export const MainNav = () => {
       <nav className="container mx-auto flex items-center justify-between py-4 px-4">
         <Link to="/" className="flex items-center gap-2">
           <div className="text-galaxy-blue text-3xl">🌌</div>
-          <span className="text-2xl font-bold text-white">GalaxyBot</span>
+          <span className="text-2xl font-bold text-white">PlutoBot</span>
         </Link>
         
         {/* Desktop Navigation */}
