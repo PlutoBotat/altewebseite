@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -51,12 +52,6 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card) / <alpha-value>)",
           foreground: "hsl(var(--card-foreground) / <alpha-value>)",
-        },
-        pluto: {
-          purple: '#6D5AE6',
-          dark: '#0B0E14',
-          darker: '#151823',
-          light: '#D6BCFA',
         },
         galaxy: {
           blue: '#5865F2',
