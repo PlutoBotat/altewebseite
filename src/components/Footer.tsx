@@ -10,10 +10,10 @@ export const Footer = () => {
           <div className="col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
               <div className="text-galaxy-blue text-3xl">🌌</div>
-              <span className="text-2xl font-bold text-white">GalaxyBot</span>
+              <span className="text-2xl font-bold text-white">PlutoBot</span>
             </Link>
             <p className="text-gray-400 mb-4">
-              GalaxyBot ist eine Discord App, die dir hilft, deinen Server zu optimieren.
+              PlutoBot ist eine Discord App, die dir hilft, deinen Server zu optimieren.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -64,7 +64,7 @@ export const Footer = () => {
         
         <div className="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} GalaxyBot. Alle Rechte vorbehalten.
+            © {new Date().getFullYear()} PlutoBot. Alle Rechte vorbehalten.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
