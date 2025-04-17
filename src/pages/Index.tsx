@@ -25,7 +25,7 @@ const Index = () => {
           className="max-w-4xl mx-auto text-center"
         >
           <div className="inline-block mb-4 px-4 py-2 rounded-full bg-galaxy-purple/20 border border-galaxy-purple/30">
-            <span className="text-gray-300 font-medium">Version 2.0 jetzt verfügbar!</span>
+            <span className="text-gray-300 font-medium">Version 1.0 jetzt verfügbar!</span>
           </div>
           
           <h1 className="text-5xl sm:text-7xl font-bold mb-8 text-gradient leading-tight">
@@ -33,7 +33,7 @@ const Index = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-12 text-gray-400 max-w-3xl mx-auto">
-            GalaxyBot ist eine App für Discord, die dir hilft, deinen Discord-Server und deine Community zu optimieren, indem sie tolle Funktionen bietet.
+            PlutoBot ist eine App für Discord, die dir hilft, deinen Discord-Server und deine Community zu optimieren, indem sie tolle Funktionen bietet.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -123,7 +123,7 @@ const Index = () => {
           <div className="relative z-10 max-w-3xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">Bereit, deinen Server zu verbessern?</h2>
             <p className="text-xl text-gray-300 mb-8">
-              Füge GalaxyBot jetzt zu deinem Discord Server hinzu und entdecke alle Funktionen.
+              Füge PlutoBot jetzt zu deinem Discord Server hinzu und entdecke alle Funktionen.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <Button 
