@@ -35,27 +35,31 @@ export const MainNav = () => {
                 </a>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink 
-                  className={`${navigationMenuTriggerStyle()} text-white hover:bg-white/5 transition-colors flex items-center`}
-                >
-                  Funktionen <ChevronDown className="ml-1 h-4 w-4" />
-                </NavigationMenuLink>
+                <a href="/features">
+                  <NavigationMenuLink 
+                    className={`${navigationMenuTriggerStyle()} text-white hover:bg-white/5 transition-colors`}
+                  >
+                    Funktionen
+                  </NavigationMenuLink>
+                </a>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <a href="/premium">
+                  <NavigationMenuLink 
+                    className={`${navigationMenuTriggerStyle()} text-white hover:bg-white/5 transition-colors`}
+                  >
+                    Premium
+                  </NavigationMenuLink>
+                </a>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <a href="/servers">
                   <NavigationMenuLink 
                     className={`${navigationMenuTriggerStyle()} text-white hover:bg-white/5 transition-colors`}
                   >
-                    Server <ChevronDown className="ml-1 h-4 w-4" />
+                    Server
                   </NavigationMenuLink>
                 </a>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink 
-                  className={`${navigationMenuTriggerStyle()} text-white hover:bg-white/5 transition-colors`}
-                >
-                  Support
-                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
@@ -69,7 +73,7 @@ export const MainNav = () => {
           >
             <Button 
               variant="custom"
-              className="bg-galaxy-blue hover:bg-galaxy-blue/90 text-white transition-all duration-300 ease-in-out transform hover:scale-105 rounded-md"
+              className="bg-galaxy-blue hover:bg-galaxy-blue/90 text-white transition-all duration-300 ease-in-out transform hover:scale-105 rounded-md shadow-lg hover:shadow-galaxy-glow"
             >
               Dashboard
             </Button>
@@ -103,17 +107,19 @@ export const MainNav = () => {
               Home
             </a>
             <a 
-              href="https://dash.plutobot.de"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/features" 
               className="px-4 py-2 rounded-lg text-white hover:bg-white/5"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Dashboard
+              Funktionen
             </a>
-            <div className="px-4 py-2 rounded-lg text-white hover:bg-white/5 flex justify-between items-center">
-              Funktionen <ChevronDown className="h-4 w-4" />
-            </div>
+            <a 
+              href="/premium" 
+              className="px-4 py-2 rounded-lg text-white hover:bg-white/5"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Premium
+            </a>
             <a 
               href="/servers" 
               className="px-4 py-2 rounded-lg text-white hover:bg-white/5"
@@ -121,9 +127,6 @@ export const MainNav = () => {
             >
               Server
             </a>
-            <div className="px-4 py-2 rounded-lg text-white hover:bg-white/5">
-              Support
-            </div>
             
             <div className="pt-4 flex flex-col gap-3">
               <a 
@@ -134,7 +137,7 @@ export const MainNav = () => {
               >
                 <Button 
                   variant="custom"
-                  className="w-full bg-galaxy-blue hover:bg-galaxy-blue/90 text-white"
+                  className="w-full bg-galaxy-blue hover:bg-galaxy-blue/90 text-white shadow-lg hover:shadow-galaxy-glow"
                 >
                   Dashboard
                 </Button>
