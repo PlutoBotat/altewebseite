@@ -10,8 +10,8 @@ export const AnnouncementBanner = () => {
           PlutoBot Plus · Personalisiere PlutoBot nach deinen Wünschen! Ab jetzt verfügbar.
         </div>
         <Button
-          variant="secondary"
-          className="bg-black/20 hover:bg-black/30 text-white rounded-full border-transparent"
+          variant="custom"
+          className="bg-black/20 hover:bg-black/30 text-white rounded-full border-transparent transform hover:scale-105 transition-all duration-300"
         >
           Mehr zu PlutoBot Plus <ArrowRight className="ml-2 h-5 w-5" />
         </Button>
