@@ -24,41 +24,45 @@ export const MainNav = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center">
           <NavigationMenu>
-            <NavigationMenuList>
+            <NavigationMenuList className="gap-2">
               <NavigationMenuItem>
                 <a href="/">
-                  <NavigationMenuLink 
-                    className={`${navigationMenuTriggerStyle()} text-white hover:bg-white/5 transition-colors`}
+                  <Button 
+                    variant="ghost"
+                    className="text-white hover:bg-white/10 transition-all duration-300"
                   >
                     Home
-                  </NavigationMenuLink>
+                  </Button>
                 </a>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <a href="/features">
-                  <NavigationMenuLink 
-                    className={`${navigationMenuTriggerStyle()} text-white hover:bg-white/5 transition-colors`}
+                  <Button 
+                    variant="ghost"
+                    className="text-white hover:bg-white/10 transition-all duration-300"
                   >
                     Funktionen
-                  </NavigationMenuLink>
+                  </Button>
                 </a>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <a href="/premium">
-                  <NavigationMenuLink 
-                    className={`${navigationMenuTriggerStyle()} text-white hover:bg-white/5 transition-colors`}
+                  <Button 
+                    variant="ghost"
+                    className="text-white hover:bg-white/10 transition-all duration-300"
                   >
                     Premium
-                  </NavigationMenuLink>
+                  </Button>
                 </a>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <a href="/servers">
-                  <NavigationMenuLink 
-                    className={`${navigationMenuTriggerStyle()} text-white hover:bg-white/5 transition-colors`}
+                  <Button 
+                    variant="ghost"
+                    className="text-white hover:bg-white/10 transition-all duration-300"
                   >
                     Server
-                  </NavigationMenuLink>
+                  </Button>
                 </a>
               </NavigationMenuItem>
             </NavigationMenuList>
@@ -73,22 +77,22 @@ export const MainNav = () => {
           >
             <Button 
               variant="custom"
-              className="bg-galaxy-blue hover:bg-galaxy-blue/90 text-white transition-all duration-300 ease-in-out transform hover:scale-105 rounded-md shadow-lg hover:shadow-galaxy-glow"
+              className="bg-galaxy-blue hover:bg-galaxy-blue/90 text-white shadow-md hover:shadow-galaxy-glow transition-all duration-300 ease-in-out transform hover:scale-105"
             >
               Dashboard
             </Button>
           </a>
           <Button 
             variant="outline" 
-            className="bg-transparent border border-white/20 hover:bg-white/10 text-white flex items-center transition-all duration-300 ease-in-out transform hover:scale-105"
+            className="bg-transparent border border-white/20 hover:bg-white/10 text-white flex items-center gap-2 transition-all duration-300 ease-in-out transform hover:scale-105"
           >
-            DE <ChevronDown className="ml-1 h-4 w-4" />
+            DE <ChevronDown className="h-4 w-4" />
           </Button>
         </div>
         
         {/* Mobile menu button */}
         <button 
-          className="md:hidden text-white p-2"
+          className="md:hidden text-white p-2 hover:bg-white/10 rounded-md transition-colors"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -101,31 +105,47 @@ export const MainNav = () => {
           <div className="flex flex-col space-y-3">
             <a 
               href="/" 
-              className="px-4 py-2 rounded-lg text-white hover:bg-white/5"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Home
+              <Button 
+                variant="ghost"
+                className="w-full text-white hover:bg-white/10 justify-start"
+              >
+                Home
+              </Button>
             </a>
             <a 
               href="/features" 
-              className="px-4 py-2 rounded-lg text-white hover:bg-white/5"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Funktionen
+              <Button 
+                variant="ghost"
+                className="w-full text-white hover:bg-white/10 justify-start"
+              >
+                Funktionen
+              </Button>
             </a>
             <a 
               href="/premium" 
-              className="px-4 py-2 rounded-lg text-white hover:bg-white/5"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Premium
+              <Button 
+                variant="ghost"
+                className="w-full text-white hover:bg-white/10 justify-start"
+              >
+                Premium
+              </Button>
             </a>
             <a 
               href="/servers" 
-              className="px-4 py-2 rounded-lg text-white hover:bg-white/5"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Server
+              <Button 
+                variant="ghost"
+                className="w-full text-white hover:bg-white/10 justify-start"
+              >
+                Server
+              </Button>
             </a>
             
             <div className="pt-4 flex flex-col gap-3">
@@ -137,16 +157,16 @@ export const MainNav = () => {
               >
                 <Button 
                   variant="custom"
-                  className="w-full bg-galaxy-blue hover:bg-galaxy-blue/90 text-white shadow-lg hover:shadow-galaxy-glow"
+                  className="w-full bg-galaxy-blue hover:bg-galaxy-blue/90 text-white shadow-md hover:shadow-galaxy-glow transition-all duration-300"
                 >
                   Dashboard
                 </Button>
               </a>
               <Button 
                 variant="outline" 
-                className="w-full flex items-center justify-center bg-transparent border border-white/20 hover:bg-white/10 text-white"
+                className="w-full flex items-center justify-center gap-2 bg-transparent border border-white/20 hover:bg-white/10 text-white"
               >
-                DE <ChevronDown className="ml-1 h-4 w-4" />
+                DE <ChevronDown className="h-4 w-4" />
               </Button>
             </div>
           </div>
