@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
@@ -8,9 +7,7 @@ const navItems = [
   { path: "/", label: "Home" },
   { path: "/features", label: "Funktionen" },
   { path: "/community", label: "Community" },
-  { path: "/premium", label: "Premium" },
-  { path: "/impressum", label: "Impressum" },
-  { path: "/privacy", label: "Datenschutz" }
+  { path: "/premium", label: "Premium" }
 ];
 
 export const MainNav = () => {
@@ -102,3 +99,4 @@ export const MainNav = () => {
     </header>
   );
 };
+
