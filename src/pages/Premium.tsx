@@ -22,7 +22,7 @@ const Premium = () => {
               Das Premium-Angebot ist <span className="font-bold text-galaxy-blue">noch nicht verfügbar</span>.
             </p>
             <p className="text-md text-gray-400 mt-2">
-              Schau bald wieder vorbei oder registriere dich für unser Newsletter, um keine Updates zu verpassen!
+              Schau bald wieder vorbei oder registriere dich für unseren Newsletter, um keine Updates zu verpassen!
             </p>
             <div className="flex items-center justify-center mt-8">
               <button
@@ -33,6 +33,7 @@ const Premium = () => {
               </button>
             </div>
           </div>
+          {/* Optional alternative content instead of "Server Management" removed as user requested */}
         </motion.div>
       </div>
       <Footer />

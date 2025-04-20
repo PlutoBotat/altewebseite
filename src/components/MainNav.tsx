@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
@@ -99,4 +100,3 @@ export const MainNav = () => {
     </header>
   );
 };
-
