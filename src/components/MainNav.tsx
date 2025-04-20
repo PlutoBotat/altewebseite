@@ -17,9 +17,22 @@ export const MainNav = () => {
 
   return (
     <header className="w-full bg-galaxy-dark/95 backdrop-blur sticky top-0 z-50 border-b border-white/10">
+      {/* Banner */}
+      <div className="w-full bg-[#222831] border-b border-white/10 flex justify-center items-center">
+        <img
+          src="/lovable-uploads/bdd11d52-1ee3-420a-95ce-3890215f2a7c.png"
+          alt="PlutoBot Banner"
+          className="w-full max-h-28 object-cover object-center"
+        />
+      </div>
       <nav className="container mx-auto flex items-center justify-between py-4 px-4">
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-galaxy-blue text-3xl">🌌</span>
+          {/* Logo Image statt Emoji */}
+          <img
+            src="/lovable-uploads/786677f2-3e22-4512-941e-b239d50114a8.png"
+            alt="PlutoBot Logo"
+            className="w-10 h-10 rounded-full object-contain bg-[#0B0E14]"
+          />
           <span className="text-2xl font-bold text-white">PlutoBot</span>
         </Link>
 
@@ -100,3 +113,4 @@ export const MainNav = () => {
     </header>
   );
 };
+

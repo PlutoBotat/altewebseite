@@ -9,7 +9,8 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="text-galaxy-blue text-3xl">🌌</div>
+              {/* PlutoBot Logo statt Emoji */}
+              <img src="/lovable-uploads/786677f2-3e22-4512-941e-b239d50114a8.png" alt="PlutoBot Logo" className="w-10 h-10 rounded-full object-contain bg-[#0B0E14]"/>
               <span className="text-2xl font-bold text-white">PlutoBot</span>
             </Link>
             <p className="text-gray-400 mb-4">
@@ -54,8 +55,9 @@ export const Footer = () => {
           <div className="col-span-1">
             <h3 className="text-white font-semibold text-lg mb-4">Rechtliches</h3>
             <ul className="space-y-3">
-              <FooterLink href="/impressum" label="Impressum" />
-              <FooterLink href="/" label="Datenschutz" />
+              {/* Impressum & Datenschutz werden entfernt */}
+              {/* <FooterLink href="/impressum" label="Impressum" /> */}
+              {/* <FooterLink href="/" label="Datenschutz" /> */}
               <FooterLink href="/" label="AGB" />
               <FooterLink href="/" label="Cookie-Einstellungen" />
             </ul>
@@ -94,3 +96,4 @@ const FooterLink = ({ href, label }: { href: string; label: string }) => (
     </Link>
   </li>
 );
+
