@@ -8,9 +8,10 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Impressum from "./pages/Impressum";
 import NotFound from "./pages/NotFound";
-import Servers from "./pages/Servers";
 import Features from "./pages/Features";
 import Premium from "./pages/Premium";
+import Privacy from "./pages/Privacy";
+import Community from "./pages/Community";
 
 const queryClient = new QueryClient();
 
@@ -24,9 +25,10 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/impressum" element={<Impressum />} />
-          <Route path="/servers" element={<Servers />} />
           <Route path="/features" element={<Features />} />
           <Route path="/premium" element={<Premium />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/community" element={<Community />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
