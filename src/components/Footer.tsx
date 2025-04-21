@@ -55,9 +55,8 @@ export const Footer = () => {
           <div className="col-span-1">
             <h3 className="text-white font-semibold text-lg mb-4">Rechtliches</h3>
             <ul className="space-y-3">
-              {/* Impressum & Datenschutz werden entfernt */}
-              {/* <FooterLink href="/impressum" label="Impressum" /> */}
-              {/* <FooterLink href="/" label="Datenschutz" /> */}
+              <FooterLink href="/impressum" label="Impressum" />
+              <FooterLink href="/" label="Datenschutz" />
               <FooterLink href="/" label="AGB" />
               <FooterLink href="/" label="Cookie-Einstellungen" />
             </ul>
