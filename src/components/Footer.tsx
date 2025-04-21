@@ -38,7 +38,7 @@ export const Footer = () => {
               <FooterLink href="/" label="Funktionen" />
               <FooterLink href="/" label="Premium" />
               <FooterLink href="/" label="Preise" />
-              <FooterLink href="/" label="Sicherheit" />
+              <FooterLink href="https://status.plutobot.de/" label="Status" />
             </ul>
           </div>
           
